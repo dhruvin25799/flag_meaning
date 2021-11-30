@@ -9,7 +9,10 @@ const flagDictionary = {
   "🏳️": "White Flag",
   "🏳️‍🌈": "Rainbow Flag",
   "🏳️‍⚧️": "Transgender Flag",
-  "🏴‍☠️": "Pirate Flag"
+  "🏴‍☠️": "Pirate Flag",
+  "🇮🇳": "India",
+  "🇺🇸": "United States",
+  "🇨🇳": "China"
 };
 
 var flags = Object.keys(flagDictionary);
@@ -25,7 +28,7 @@ export default function App() {
   }
 
   function flagClickHandler(flag) {
-    setmeaning(flag + flagDictionary[flag]);
+    setmeaning(flag + " " + flagDictionary[flag]);
   }
 
   return (
