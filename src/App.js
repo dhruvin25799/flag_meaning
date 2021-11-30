@@ -24,7 +24,7 @@ export default function App() {
     if (meaning === undefined) {
       meaning = "Sorry this flag is not in our database!";
     }
-    setmeaning(userInput + meaning);
+    setmeaning(userInput + " " + meaning);
   }
 
   function flagClickHandler(flag) {
